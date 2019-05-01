@@ -5,7 +5,7 @@
 from discord.ext import commands
 import requests
 
-token = 'NTcyOTkxNTUzNDYzOTEwNDAx.XMlOHw.FncK73xCrXLdGrUUugfRmKJmr30'
+token = ''
 
 
 class D2():
