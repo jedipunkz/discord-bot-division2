@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# import discord
 from discord.ext import commands
 import requests
+import os
 
-token = ''
+token = os.getenv('token')
 
 
 class D2():
