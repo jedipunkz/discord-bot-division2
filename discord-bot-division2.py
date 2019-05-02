@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import discord
 from discord.ext import commands
 import requests
 import os
@@ -63,12 +64,7 @@ def main():
             description='a division2 bot get user information.'
     )
 
-    @bot.event
-    async def on_ready():
-        print('Logged in.')
-
     @bot.command()
-    # async def add(ctx, a: int, b: int):
     async def d2user(ctx, uplay_name):
         user_id = D2(bot).get_user_id(uplay_name)
         if user_id:
